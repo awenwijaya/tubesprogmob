@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/imageLogo"
+        android:layout_width="197dp"
+        android:layout_height="177dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.008"
+        app:srcCompat="@drawable/app_icon" />
+
+    <TextView
+        android:id="@+id/textWelcome"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="serif"
+        android:text="Select the Place Category"
+        android:textSize="17sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageLogo" />
+
+    <ImageButton
+        android:id="@+id/buttonEntertainment"
+        android:layout_width="90dp"
+        android:layout_height="84dp"
+        android:layout_marginStart="96dp"
+        android:layout_marginTop="8dp"
+        android:onClick="pindahEntertainment"
+        android:scaleType="centerInside"
+        app:layout_constraintEnd_toStartOf="@+id/buttonEducation"
+        app:layout_constraintHorizontal_bias="0.025"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textWelcome"
+        app:srcCompat="@drawable/hiburan" />
+
+    <ImageButton
+        android:id="@+id/buttonEducation"
+        android:layout_width="90dp"
+        android:layout_height="84dp"
+        android:layout_marginStart="38dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="97dp"
+        android:onClick="pindahEducation"
+        android:scaleType="centerInside"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/buttonEntertainment"
+        app:layout_constraintTop_toBottomOf="@+id/textWelcome"
+        app:srcCompat="@drawable/edukasi" />
+
+    <TextView
+        android:id="@+id/textEntertainment"
+        android:layout_width="119dp"
+        android:layout_height="16dp"
+        android:layout_marginStart="82dp"
+        android:text="Entertainment"
+        android:textAlignment="center"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/buttonEntertainment" />
+
+    <TextView
+        android:id="@+id/textEducation"
+        android:layout_width="91dp"
+        android:layout_height="17dp"
+        android:text="Education"
+        android:textAlignment="center"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.193"
+        app:layout_constraintStart_toEndOf="@+id/textEntertainment"
+        app:layout_constraintTop_toBottomOf="@+id/buttonEducation"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <ImageButton
+        android:id="@+id/buttonCulinary"
+        android:layout_width="92dp"
+        android:layout_height="94dp"
+        android:layout_marginStart="96dp"
+        android:layout_marginTop="16dp"
+        android:onClick="pindahCulinary"
+        android:scaleType="centerInside"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textEntertainment"
+        app:srcCompat="@drawable/kuliner" />
+
+    <ImageButton
+        android:id="@+id/buttonSport"
+        android:layout_width="86dp"
+        android:layout_height="93dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="23dp"
+        android:onClick="pindahSport"
+        android:scaleType="centerInside"
+        app:layout_constraintBottom_toTopOf="@+id/textSport"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/buttonCulinary"
+        app:layout_constraintTop_toBottomOf="@+id/textEducation"
+        app:srcCompat="@drawable/olahraga" />
+
+    <TextView
+        android:id="@+id/textCulinary"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="117dp"
+        android:layout_marginBottom="163dp"
+        android:text="Culinary"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/buttonCulinary"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/textSport"
+        android:layout_width="86dp"
+        android:layout_height="19dp"
+        android:text="Sport"
+        android:textAlignment="center"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.365"
+        app:layout_constraintStart_toEndOf="@+id/textCulinary"
+        app:layout_constraintTop_toBottomOf="@+id/buttonSport" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:text="By: 1805551104, 1805551105, 1805551149, 1805551161"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.489"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
